@@ -1,0 +1,3 @@
+/home/leizhu/git_repo/cs344/practice/CMakeFiles/rebuild_cache.dir
+/home/leizhu/git_repo/cs344/practice/CMakeFiles/cube.dir
+/home/leizhu/git_repo/cs344/practice/CMakeFiles/edit_cache.dir
