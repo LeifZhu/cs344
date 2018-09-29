@@ -6,9 +6,15 @@
 ############################################################################
 
 # collect source files
+cmake_minimum_required(VERSION 3.10)
 
 file( GLOB  hdr *.hpp *.h )
 file( GLOB  cu  *.cu)
 SET (HW2_files main.cpp reference_calc.cpp compare.cpp)
-    
+
+find_package(OpenCV REQUIRED)
+find_package(CUDA)
 CUDA_ADD_EXECUTABLE(HW2 ${HW2_files} ${hdr} ${cu})
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+target_link_libraries( HW2 ${OpenCV_LIBS} )
